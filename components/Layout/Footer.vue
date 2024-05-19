@@ -1,10 +1,11 @@
 <template>
   <footer
-    class="flex h-[80px] w-full items-center justify-between border-t-[2px] border-t-[#7979791a] bg-[#fff] dark:bg-black px-[20px] text-[1.5rem]"
+    class="flex h-[80px] w-full items-center justify-between border-t-[2px] border-t-[#7979791a] bg-[#fff] px-[20px] lg:text-[1.5rem]  dark:bg-black"
   >
-    <div>© {{ new Date().getFullYear() }}. All rights reserved.</div>
+    <div class="lg:block hidden">© {{ new Date().getFullYear() }}. All rights reserved.</div>
     <div class="flex items-center gap-[30px]">
-      <span>Contact</span>
+      <NuxtLink to="/faq"><span>Câu hỏi thường gặp </span></NuxtLink>
+      <span>Liên hệ</span>
       <div class="flex gap-[20px] *:w-[40px]">
         <NuxtLink to="https://zalo.me/0888388859" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none">
@@ -50,13 +51,13 @@
           </svg>
         </NuxtLink>
         <NuxtLink to="https://www.facebook.com/profile.php?id=61559687014537" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1536">
-          <path
-            fill="#0068FF"
-            d="M1248 0q119 0 203.5 84.5T1536 288v960q0 119-84.5 203.5T1248 1536h-188V941h199l30-232h-229V561q0-56 23.5-84t91.5-28l122-1V241q-63-9-178-9q-136 0-217.5 80T820 538v171H620v232h200v595H288q-119 0-203.5-84.5T0 1248V288Q0 169 84.5 84.5T288 0z"
-          />
-        </svg>
-      </NuxtLink>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1536">
+            <path
+              fill="#0068FF"
+              d="M1248 0q119 0 203.5 84.5T1536 288v960q0 119-84.5 203.5T1248 1536h-188V941h199l30-232h-229V561q0-56 23.5-84t91.5-28l122-1V241q-63-9-178-9q-136 0-217.5 80T820 538v171H620v232h200v595H288q-119 0-203.5-84.5T0 1248V288Q0 169 84.5 84.5T288 0z"
+            />
+          </svg>
+        </NuxtLink>
       </div>
     </div>
   </footer>

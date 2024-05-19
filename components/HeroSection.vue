@@ -1,11 +1,19 @@
 <template>
   <div
     ref="container"
-    class="keen-slider *:flex *:h-[350px] *:items-center *:justify-center  *:text-black rounded-[20px] text-[4rem] shadow-xl"
+    class="keen-slider rounded-[20px] sm:text-[2rem] text-[1.5rem] shadow-xl *:flex lg:h-[350px] h-[200px] *:items-center *:justify-center *:text-black lg:text-[3.5rem]"
   >
-    <div class="keen-slider__slide w-full font-semibold bg-[#93ec58]">Web bán Account Premium giá rẻ</div>
-    <div class="keen-slider__slide w-full bg-[#58dbec]">Uy tín, chất lượng, bảo hành trọn thời gian sử dụng</div>
-    <div class="keen-slider__slide w-full bg-[#9f69e7]">Ở đâu bán rẻ, chúng tôi còn bán rẻ hơn !</div>
+    <div class="keen-slider__slide w-full h-full  bg-[#93ec58] px-[20px] font-semibold">
+      <p class="text-center">Web bán Account Premium giá rẻ</p>
+    </div>
+    <div class="keen-slider__slide w-full  h-full bg-[#58dbec] px-[20px]">
+      <p class="text-center">Uy tín, chất lượng, bảo hành trọn thời gian sử dụng</p>
+      
+    </div>
+    <div class="keen-slider__slide w-full h-full bg-[#9f69e7] px-[20px]">
+      <p class="text-center">Ở đâu bán rẻ, chúng tôi còn bán rẻ hơn !</p>
+      
+    </div>
   </div>
 </template>
 
@@ -16,15 +24,15 @@ const [container, slider] = useKeenSlider({ loop: true }, [])
 
 const timerRef = ref<NodeJS.Timeout>()
 
-onMounted(() => {
-  timerRef.value = setInterval(() => {
-    slider.value?.next()
-  }, 3_000)
-})
+// onMounted(() => {
+//   timerRef.value = setInterval(() => {
+//     slider.value?.next()
+//   }, 3_000)
+// })
 
-onUnmounted(() => {
-  clearInterval(timerRef.value)
-})
+// onUnmounted(() => {
+//   clearInterval(timerRef.value)
+// })
 
 const selected = ref(false)
 </script>
