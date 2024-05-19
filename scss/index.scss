@@ -5,8 +5,9 @@
 }
 /* Custom ScrollBar Chrome Opera */
 ::-webkit-scrollbar {
-  width: 2px;
-}
+    width: 5px;   // for vertical scroll bar
+    height: 5px;  // for horizontal scroll bar
+  }
 ::-webkit-scrollbar-track {
   background: #ffffff;
 }

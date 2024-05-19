@@ -10,7 +10,9 @@
 import HeroSection from '~/components/HeroSection.vue';
 import AllProduct from '~/components/HomePage/AllProduct/AllProduct.vue';
 import TopSeller from '~/components/HomePage/TopSeller/TopSeller.vue';
-
+definePageMeta({
+  colorMode: 'light',
+})
 </script>
 
 <style scoped></style>
