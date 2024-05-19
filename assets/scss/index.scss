@@ -1,13 +1,18 @@
+@font-face {
+  font-family: 'Atop';
+  src: url('./../fonts/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg-VNw7NHvqnp.woff2');
+}
+
 :root {
-  font-family: Reddit Mono;
-  font-size: 14px;
+  font-family: Wix Madefor Display;
+  font-size: 15px;
   font-weight: 600;
 }
 /* Custom ScrollBar Chrome Opera */
 ::-webkit-scrollbar {
-    width: 5px;   // for vertical scroll bar
-    height: 5px;  // for horizontal scroll bar
-  }
+  width: 5px; // for vertical scroll bar
+  height: 5px; // for horizontal scroll bar
+}
 ::-webkit-scrollbar-track {
   background: #ffffff;
 }

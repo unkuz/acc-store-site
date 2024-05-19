@@ -1,7 +1,7 @@
 <template>
   <div
     ref="container"
-    class="keen-slider rounded-[10px] *:flex *:h-[200px] *:items-center *:justify-center *:bg-[#93ec58] *:text-black"
+    class="keen-slider *:flex *:h-[200px] *:items-center *:justify-center *:bg-[#93ec58] *:text-black"
   >
     <div class="keen-slider__slide w-full font-semibold">Web bán account premium giá rẻ</div>
     <div class="keen-slider__slide w-full">2</div>

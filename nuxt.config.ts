@@ -5,5 +5,5 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light'
   },
-  css:['~/scss/index.scss']
+  css:['~/assets/scss/index.scss'],
 });
