@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection />
-    <ProductList class="mt-[20px]" label="Sản phẩm đang bán"/>
+    <ProductList class="mt-[35px]" label="Sản phẩm đang bán"/>
   </div>
 </template>
 

@@ -1,10 +1,11 @@
 <template>
   <div>
-    <UContainer class="w-[1000px] !px-0 max-w-full">
+    <UContainer class="w-full max-w-full !px-[30px]">
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
     </UContainer>
+
     <UNotifications />
   </div>
 </template>
