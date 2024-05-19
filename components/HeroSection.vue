@@ -24,15 +24,15 @@ const [container, slider] = useKeenSlider({ loop: true }, [])
 
 const timerRef = ref<NodeJS.Timeout>()
 
-// onMounted(() => {
-//   timerRef.value = setInterval(() => {
-//     slider.value?.next()
-//   }, 3_000)
-// })
+onMounted(() => {
+  timerRef.value = setInterval(() => {
+    slider.value?.next()
+  }, 3_000)
+})
 
-// onUnmounted(() => {
-//   clearInterval(timerRef.value)
-// })
+onUnmounted(() => {
+  clearInterval(timerRef.value)
+})
 
 const selected = ref(false)
 </script>
