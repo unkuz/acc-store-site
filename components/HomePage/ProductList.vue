@@ -14,7 +14,7 @@
         >{{ i }}</UButton
       >
     </div>
-    <div class="grid w-full grid-cols-1 md:gap-[20px] gap-[10px] md:grid-cols-3 xl:grid-cols-4">
+    <div class="grid w-full grid-cols-2 md:gap-[20px] gap-[10px] md:grid-cols-3 xl:grid-cols-4">
       <div class="aspect-video w-full rounded-[20px] bg-[#d09efab4] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#3ce8ee] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#e8f081] shadow-xl"></div>
