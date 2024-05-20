@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div class="lg:my-[120px] my-[90px] min-h-[100vh]">
+    <div class="lg:py-[120px] py-[90px]">
       <slot />
     </div>
     <Footer />

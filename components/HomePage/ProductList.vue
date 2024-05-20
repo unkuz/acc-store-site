@@ -1,6 +1,6 @@
 <template>
   <div>
-    <label class="text-[1.5rem] leading-[1.5rem]">{{ label }}</label>
+    <label class="lg:text-[1.2rem] text-[1rem] leading-[1.5rem]">{{ label }}</label>
     <div class="my-[10px] flex gap-[10px]">
       <UButton
         v-for="(i, idx) in btnListFilter"
@@ -10,7 +10,8 @@
         :color="i === currentFilterBy ? 'black' : 'white'"
         :ui="{ rounded: 'rounded-full' }"
         @click="handleClickFilter(i)"
-        :class="[{ 'dark:bg-black': i !== currentFilterBy }]"
+        :class="[{ 'dark:bg-black': i !== currentFilterBy }, 'text-[1rem] font-[700]']"
+        trailing
         >{{ i }}</UButton
       >
     </div>
@@ -18,6 +19,12 @@
       <div class="aspect-video w-full rounded-[20px] bg-[#d09efab4] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#3ce8ee] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#e8f081] shadow-xl"></div>
+      <div class="aspect-video w-full rounded-[20px] bg-[#ffc446] shadow-xl"></div>
+      <div class="aspect-video w-full rounded-[20px] bg-[#27ee38] shadow-xl"></div>
+      <div class="aspect-video w-full rounded-[20px] bg-[#414446] shadow-xl"></div>
+      <div class="aspect-video w-full rounded-[20px] bg-[#ffc446] shadow-xl"></div>
+      <div class="aspect-video w-full rounded-[20px] bg-[#27ee38] shadow-xl"></div>
+      <div class="aspect-video w-full rounded-[20px] bg-[#414446] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#ffc446] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#27ee38] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#414446] shadow-xl"></div>

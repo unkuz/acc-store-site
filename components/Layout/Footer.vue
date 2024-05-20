@@ -1,9 +1,9 @@
 <template>
   <footer
-    class="flex h-[80px] w-full items-center lg:justify-between justify-center border-t-[2px] border-t-[#7979791a] bg-[#fff] dark:bg-black lg:text-[1.5rem]"
+    class="flex lg:h-[80px] h-[60px] w-full items-center lg:justify-between justify-center border-t-[2px] border-t-[#7979791a] bg-[#fff] dark:bg-black lg:text-[1.2rem] fixed bottom-0 left-0 lg:px-[30px] px-[10px]"
   >
     <div class="hidden lg:block">© {{ new Date().getFullYear() }}. All rights reserved.</div>
-    <div class="flex items-center  gap-[30px]">
+    <div class="flex items-center justify-between  gap-[30px] w-full lg:w-auto">
       <NuxtLink to="/faq"><span>Câu hỏi thường gặp </span></NuxtLink>
       <div class="flex items-center  gap-[20px]"> 
         <span>Liên hệ</span>
