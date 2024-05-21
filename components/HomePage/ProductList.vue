@@ -1,6 +1,6 @@
 <template>
   <div>
-    <label class="lg:text-[1.2rem] text-[1rem] leading-[1.5rem]">{{ label }}</label>
+    <label class="lg:text-[1.3rem] text-[1.1rem] leading-[1.5rem]">{{ label }}</label>
     <div class="my-[10px] flex gap-[10px]">
       <UButton
         v-for="(i, idx) in btnListFilter"
@@ -10,7 +10,7 @@
         :color="i === currentFilterBy ? 'black' : 'white'"
         :ui="{ rounded: 'rounded-full' }"
         @click="handleClickFilter(i)"
-        :class="[{ 'dark:bg-black': i !== currentFilterBy }, 'text-[1rem] font-[700]']"
+        :class="[{ 'dark:bg-black': i !== currentFilterBy }, 'text-[0.9rem] lg:text-[1rem] font-[700] !h-[35px] [&>span]:h-[18px]']"
         trailing
         >{{ i }}</UButton
       >
