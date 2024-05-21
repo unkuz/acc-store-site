@@ -21,29 +21,39 @@
     <div
       class="grid w-full grid-cols-2 gap-x-[10px] gap-y-[20px] md:grid-cols-3 md:gap-x-[20px] md:gap-y-[30px] xl:grid-cols-4"
     >
-      <div class="aspect-video w-full rounded-[20px] bg-[#d09efab4] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#3ce8ee] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#e8f081] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#ffc446] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#27ee38] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#414446] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#ffc446] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#27ee38] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#414446] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#ffc446] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#27ee38] shadow-xl"></div>
-      <div class="aspect-video w-full rounded-[20px] bg-[#414446] shadow-xl"></div>
+      <Product
+        v-for="i in PRODUCT_LIST"
+        :key="i.id"
+        :name="i.name"
+        :image="i.image"
+        :price-origin="i.priceOrigin"
+        :price-sale="i.priceSale"
+      />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-const props = defineProps({
+import Product from './Product.vue'
+
+defineProps({
   label: {
     type: String,
     required: true,
   },
 })
+
+const PRODUCT_LIST = [
+  {
+    id: 1,
+
+    image:
+      'https://res.cloudinary.com/dg0cgbjgx/image/upload/v1716306096/Spotify-GiaHan-1y-65116_lso1o4.png',
+    name: 'Spotify Premium 1 năm - Gia hạn chính chủ',
+    priceSale: '235.000',
+    priceOrigin: '590.000',
+  },
+]
 
 const btnListFilter = {
   all: 'Tất cả',
@@ -64,4 +74,4 @@ const handleClickFilter = (btn: string) => {
 }
 </script>
 
-<style></style>
+<style scoped></style>

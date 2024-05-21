@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import HeroSection from '~/components/HeroSection.vue'
-import ProductList from '~/components/HomePage/ProductList.vue'
+import ProductList from '~/components/HomePage/Product/ProductList.vue'
 </script>
 
 <style scoped></style>

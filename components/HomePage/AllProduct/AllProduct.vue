@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import ProductList from '../ProductList.vue'
+import ProductList from '../Product/ProductList.vue'
 </script>
 
 <style></style>
