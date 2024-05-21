@@ -1,13 +1,7 @@
 <template>
-  <marquee>
-    KM cuc hot: ABC xyz abc xyz 🤣🤣🤣🤣🤣🤣🌵🌵🌵🌵🌵🌵🌵🌵
-  </marquee>
+  <marquee>KM cuc hot: ABC xyz abc xyz 🤣🤣🤣🤣🤣🤣🌵🌵🌵🌵🌵🌵🌵🌵</marquee>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup></script>
 
-</script>
-
-<style>
-
-</style>
+<style></style>

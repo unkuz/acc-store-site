@@ -2,8 +2,8 @@
   <header
     class="fixed left-0 top-0 z-10 grid h-[60px] w-full grid-cols-5 border-b-[2px] border-b-[#7979791a] bg-[#ffffffd5] px-[10px] backdrop-blur-[3px] dark:bg-black sm:h-[80px] lg:h-[100px] lg:grid-cols-3 lg:px-[30px]"
   >
-    <NuxtLink to="/" class="w-[58px] sm:w-[78px] lg:w-[98px]">
-      <NuxtPicture format="avif,webp" src="/logo-min.png" />
+    <NuxtLink to="/" class="aspect-square w-[58px] sm:w-[78px] lg:w-[98px]">
+      <NuxtImg format="avif,webp" src="/logo-min.png" class="!h-full !w-full" />
     </NuxtLink>
 
     <div class="col-span-3 flex h-full w-full items-center justify-center lg:col-span-1">
@@ -17,7 +17,6 @@
         v-model="isDark"
         size="2xl"
         color="purple"
-        
         :title="isDark ? 'Hiển thị tối' : 'Hiển thị sáng'"
       />
       <UIcon name="i-heroicons-archive-box" class="!text-[40px]" title="Giỏ hàng" />

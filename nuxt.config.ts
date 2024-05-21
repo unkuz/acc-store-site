@@ -6,8 +6,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/fonts',
     '@nuxt/image',
-    "@vite-pwa/nuxt",
-    "@nuxtjs/seo"
+    '@vite-pwa/nuxt',
+    '@nuxtjs/seo',
   ],
   colorMode: {
     preference: 'light',
@@ -26,10 +26,11 @@ export default defineNuxtConfig({
       ],
     },
   },
-  site:{
+  site: {
     url: 'https://www.webaccgiare.store/',
     name: 'Web Account Premium giá tốt',
-    description: 'Ở đây cung cấp đăng kí tài khoản Spotify Premium, Youtube Premium, Elsa Pro/Premium, Google One, Duolingo, GPT Plus, ... Uy tín, chất lượng, giá tốt',
+    description:
+      'Ở đây cung cấp đăng kí tài khoản Spotify Premium, Youtube Premium, Elsa Pro/Premium, Google One, Duolingo, GPT Plus, ... Uy tín, chất lượng, giá tốt',
     defaultLocale: 'vi',
-  }
+  },
 })

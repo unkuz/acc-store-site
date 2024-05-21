@@ -1,7 +1,7 @@
 <template>
   <div>
-    <label class="lg:text-[1.3rem] text-[1.1rem] leading-[1.5rem]">{{ label }}</label>
-    <div class="mt-[15px] mb-[15px] lg:mb-[20px] flex gap-[10px]">
+    <label class="text-[1.1rem] leading-[1.5rem] lg:text-[1.3rem]">{{ label }}</label>
+    <div class="mb-[15px] mt-[15px] flex gap-[10px] lg:mb-[20px]">
       <UButton
         v-for="(i, idx) in btnListFilter"
         :key="idx"
@@ -10,12 +10,17 @@
         :color="i === currentFilterBy ? 'black' : 'white'"
         :ui="{ rounded: 'rounded-full' }"
         @click="handleClickFilter(i)"
-        :class="[{ 'dark:bg-black': i !== currentFilterBy }, 'text-[0.9rem] lg:text-[1rem] font-[700] !h-[35px] [&>span]:h-[18px]']"
+        :class="[
+          { 'dark:bg-black': i !== currentFilterBy },
+          '!h-[35px] text-[0.9rem] font-[700] lg:text-[1rem] [&>span]:h-[18px]',
+        ]"
         trailing
         >{{ i }}</UButton
       >
     </div>
-    <div class="grid w-full grid-cols-2 md:gap-x-[20px] gap-x-[10px] gap-y-[20px] md:gap-y-[30px] md:grid-cols-3 xl:grid-cols-4">
+    <div
+      class="grid w-full grid-cols-2 gap-x-[10px] gap-y-[20px] md:grid-cols-3 md:gap-x-[20px] md:gap-y-[30px] xl:grid-cols-4"
+    >
       <div class="aspect-video w-full rounded-[20px] bg-[#d09efab4] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#3ce8ee] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#e8f081] shadow-xl"></div>

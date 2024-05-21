@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UContainer class="w-full max-w-full lg:!px-[30px] px-[10px]">
+    <UContainer class="w-full max-w-full px-[10px] lg:!px-[30px]">
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>

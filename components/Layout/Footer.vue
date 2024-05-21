@@ -1,11 +1,11 @@
 <template>
   <footer
-    class="flex lg:h-[80px] h-[60px] w-full items-center lg:justify-between justify-center border-t-[2px] border-t-[#7979791a] bg-[#fff] dark:bg-black lg:text-[1.2rem] fixed bottom-0 left-0 lg:px-[30px] px-[10px]"
+    class="fixed bottom-0 left-0 flex h-[60px] w-full items-center justify-center border-t-[2px] border-t-[#7979791a] bg-[#fff] px-[10px] dark:bg-black lg:h-[80px] lg:justify-between lg:px-[30px] lg:text-[1.2rem]"
   >
     <div class="hidden lg:block">© {{ new Date().getFullYear() }}. All rights reserved.</div>
-    <div class="flex items-center justify-between  gap-[30px] w-full lg:w-auto">
+    <div class="flex w-full items-center justify-between gap-[30px] lg:w-auto">
       <NuxtLink to="/faq"><span>Câu hỏi thường gặp </span></NuxtLink>
-      <div class="flex items-center  gap-[20px]"> 
+      <div class="flex items-center gap-[20px]">
         <span>Liên hệ</span>
         <div class="flex gap-[20px] *:w-[40px]">
           <NuxtLink to="https://zalo.me/0888388859" target="_blank">

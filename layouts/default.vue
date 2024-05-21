@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div class="lg:py-[120px] py-[90px]">
+    <div class="py-[90px] lg:py-[120px]">
       <slot />
     </div>
     <Footer />
