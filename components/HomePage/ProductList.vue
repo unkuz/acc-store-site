@@ -1,7 +1,7 @@
 <template>
   <div>
     <label class="lg:text-[1.3rem] text-[1.1rem] leading-[1.5rem]">{{ label }}</label>
-    <div class="my-[10px] flex gap-[10px]">
+    <div class="mt-[15px] mb-[15px] lg:mb-[20px] flex gap-[10px]">
       <UButton
         v-for="(i, idx) in btnListFilter"
         :key="idx"
@@ -15,7 +15,7 @@
         >{{ i }}</UButton
       >
     </div>
-    <div class="grid w-full grid-cols-2 md:gap-[20px] gap-[10px] md:grid-cols-3 xl:grid-cols-4">
+    <div class="grid w-full grid-cols-2 md:gap-x-[20px] gap-x-[10px] gap-y-[20px] md:gap-y-[30px] md:grid-cols-3 xl:grid-cols-4">
       <div class="aspect-video w-full rounded-[20px] bg-[#d09efab4] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#3ce8ee] shadow-xl"></div>
       <div class="aspect-video w-full rounded-[20px] bg-[#e8f081] shadow-xl"></div>
