@@ -8,7 +8,7 @@
     />
     <UIcon
       name="i-heroicons-magnifying-glass-20-solid"
-      class="absolute bottom-1/2 right-[20px] translate-y-1/2 cursor-pointer !text-[20px]"
+      class="absolute bottom-1/2 right-[20px] translate-y-1/2 cursor-pointer !text-[22px]"
       alt="Giỏ hàng"
     />
   </div>

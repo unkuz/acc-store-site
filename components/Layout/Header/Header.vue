@@ -1,8 +1,9 @@
 <template>
+  <div class="w-screen fixed top-0 left-0  bg-[#fff] z-10 h-[60px] sm:h-[80px] lg:h-[100px]">
   <header
-    class="fixed left-0 top-0 z-10 grid h-[60px] w-full grid-cols-5 border-b-[2px] border-b-[#7979791a] bg-[#ffffffd5] px-[10px] backdrop-blur-[3px] dark:bg-black sm:h-[80px] lg:h-[100px] lg:grid-cols-3 lg:px-[30px]"
+    class="h-full grid w-full mx-auto max-w-[1800px] grid-cols-5 border-b-[1px] border-b-[#7979791a]  px-[10px] backdrop-blur-[3px] dark:bg-black   lg:grid-cols-3 lg:px-0"
   >
-    <NuxtLink to="/" class="aspect-square w-[58px] sm:w-[78px] lg:w-[98px]">
+    <NuxtLink to="/" class="aspect-square w-[58px] sm:w-[78px] lg:w-[100px]">
       <NuxtImg format="avif,webp" src="/logo-min.png" class="!h-full !w-full" />
     </NuxtLink>
 
@@ -11,14 +12,6 @@
     </div>
 
     <nav class="hidden items-center justify-end gap-[30px] lg:flex">
-      <UToggle
-        on-icon="i-heroicons-moon"
-        off-icon="i-heroicons-sun"
-        v-model="isDark"
-        size="2xl"
-        color="purple"
-        :title="isDark ? 'Hiển thị tối' : 'Hiển thị sáng'"
-      />
       <UIcon name="i-heroicons-archive-box" class="!text-[40px]" title="Giỏ hàng" />
       <UIcon
         name="i-heroicons-arrow-left-end-on-rectangle-20-solid"
@@ -36,19 +29,10 @@
       </div>
     </div>
   </header>
+</div>
 </template>
 <script lang="ts" setup>
 import Search from './Search.vue'
-
-const colorMode = useColorMode()
-const isDark = computed({
-  get() {
-    return colorMode.value === 'dark'
-  },
-  set() {
-    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-  },
-})
 </script>
 
 <style></style>

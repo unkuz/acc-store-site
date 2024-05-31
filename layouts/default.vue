@@ -4,7 +4,7 @@
     <div class="py-[90px] lg:py-[120px]">
       <slot />
     </div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="fixed bottom-0 left-0 flex h-[60px] w-full items-center justify-center border-t-[2px] border-t-[#7979791a] bg-[#fff] bg-[#ffffffd5] px-[10px] backdrop-blur-[3px] dark:bg-black lg:h-[80px] lg:justify-between lg:px-[30px] lg:text-[1.2rem]"
+    class="fixed bottom-0 right-1/2 flex h-[60px] w-full max-w-[1800px] translate-x-1/2 items-center justify-center border-t-[1px] border-t-[#7979791a] bg-[#fff] px-[10px] backdrop-blur-[3px] dark:bg-black lg:h-[80px] lg:justify-between lg:px-0 lg:text-[1.2rem]"
   >
     <div class="hidden lg:block">© {{ new Date().getFullYear() }}. All rights reserved.</div>
     <div class="flex w-full items-center justify-between gap-[30px] lg:w-auto">

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="gradient flex w-full flex-col gap-[10px] overflow-hidden rounded-[20px] bg-[#69e7f8] p-[10px] shadow-lg shadow-[#69d0f8] dark:bg-[#242424]"
+    class="gradient flex w-full flex-col gap-[10px] overflow-hidden rounded-[20px] bg-[#a2ff8f] p-[10px] shadow-lg shadow-[#90dbfc] dark:bg-[#242424]"
   >
     <NuxtImg :src="image" class="!w-full rounded-[15px] object-contain" />
     <div class="">

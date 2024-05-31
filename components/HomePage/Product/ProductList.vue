@@ -46,7 +46,46 @@ defineProps({
 const PRODUCT_LIST = [
   {
     id: 1,
-
+    image:
+      'https://res.cloudinary.com/dg0cgbjgx/image/upload/v1716306096/Spotify-GiaHan-1y-65116_lso1o4.png',
+    name: 'Spotify Premium 1 năm - Gia hạn chính chủ',
+    priceSale: '235.000',
+    priceOrigin: '590.000',
+  },
+  {
+    id: 1,
+    image:
+      'https://res.cloudinary.com/dg0cgbjgx/image/upload/v1716306096/Spotify-GiaHan-1y-65116_lso1o4.png',
+    name: 'Spotify Premium 1 năm - Gia hạn chính chủ',
+    priceSale: '235.000',
+    priceOrigin: '590.000',
+  },
+  {
+    id: 1,
+    image:
+      'https://res.cloudinary.com/dg0cgbjgx/image/upload/v1716306096/Spotify-GiaHan-1y-65116_lso1o4.png',
+    name: 'Spotify Premium 1 năm - Gia hạn chính chủ',
+    priceSale: '235.000',
+    priceOrigin: '590.000',
+  },
+  {
+    id: 1,
+    image:
+      'https://res.cloudinary.com/dg0cgbjgx/image/upload/v1716306096/Spotify-GiaHan-1y-65116_lso1o4.png',
+    name: 'Spotify Premium 1 năm - Gia hạn chính chủ',
+    priceSale: '235.000',
+    priceOrigin: '590.000',
+  },
+  {
+    id: 1,
+    image:
+      'https://res.cloudinary.com/dg0cgbjgx/image/upload/v1716306096/Spotify-GiaHan-1y-65116_lso1o4.png',
+    name: 'Spotify Premium 1 năm - Gia hạn chính chủ',
+    priceSale: '235.000',
+    priceOrigin: '590.000',
+  },
+  {
+    id: 1,
     image:
       'https://res.cloudinary.com/dg0cgbjgx/image/upload/v1716306096/Spotify-GiaHan-1y-65116_lso1o4.png',
     name: 'Spotify Premium 1 năm - Gia hạn chính chủ',

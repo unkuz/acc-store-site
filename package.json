@@ -15,9 +15,11 @@
     "@nuxt/fonts": "^0.7.0",
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.16.0",
+    "@tresjs/nuxt": "^2.1.2",
     "@vite-pwa/nuxt": "^0.7.0",
     "keen-slider": "^6.8.6",
     "nuxt": "^3.11.2",
+    "three": "^0.164.1",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },

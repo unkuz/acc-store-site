@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vite-pwa/nuxt',
     '@nuxtjs/seo',
+    '@tresjs/nuxt'
   ],
   colorMode: {
     preference: 'light',
